@@ -1,0 +1,22 @@
+.banner {
+    background-color: darkslateblue;
+}
+
+h1 {
+    color: limegreen;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.links {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: limegreen;
+}

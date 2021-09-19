@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimball for Board of Ed</title>
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Keith Kimball for Board of Ed</h1>
+        <div class="links">
+            <a [routerLink]="[ '']">Home |</a>
+            <a [routerLink]="['/campaign']"> About Keith |</a>
+            <a href=" https://nlgreens.org/support.html " target="_blank "> Get Involved |</a>
+            <a href="https://nlgreens.org/about.html " target="_blank "> About NL Greens</a>
+        </div>
+    </div>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+    <footer>
+        <kboe-footer></kboe-footer>
+    </footer>
+</body>
+
+</html>
