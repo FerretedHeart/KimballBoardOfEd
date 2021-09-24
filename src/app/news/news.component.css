@@ -1,0 +1,12 @@
+.video {
+	padding: 25px;
+	width: 560px;
+	height: 315px;
+	display: block;
+	margin: 0 auto;
+}
+
+h4 {
+	text-align: center;
+	padding: 50px;
+}
