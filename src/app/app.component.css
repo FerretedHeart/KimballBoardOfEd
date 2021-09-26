@@ -1,22 +1,30 @@
 .banner {
-    background-color: darkslateblue;
+	background-color: darkslateblue;
 }
 
 h1 {
-    color: limegreen;
-    text-align: center;
-    text-shadow: 2px 2px black;
-    text-transform: uppercase;
-    font-weight: bold;
+	color: limegreen;
+	text-align: center;
+	text-shadow: 2px 2px black;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .links {
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 30px;
 }
 
 a {
-    text-decoration: none;
-    color: limegreen;
+	text-decoration: none;
+	color: limegreen;
+}
+
+button {
+	background-color: transparent;
+	color: limegreen;
+	padding: 10px;
+	border-radius: 10px;
+	text-shadow: 2px 2px black;
 }
