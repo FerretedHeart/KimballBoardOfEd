@@ -1,16 +1,28 @@
+<div class="container col-sm-offset-5 col-sm-2">
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="language" id="flexRadioEnglish" checked (click)="value = 'English'">
+        <label class="form-check-label" for="flexRadioEnglish" >
+          English
+        </label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="language" id="flexRadioSpanish" (click)="value = 'Spanish'">
+        <label class="form-check-label" for="flexRadioSpanish">
+          Spanish
+        </label>
+      </div>
+</div>
 <div class="container-fluid about">
-    <div class="bio row">
+    <div class="bio row"  *ngIf="value !== 'Spanish'">
         <div class="col-sm-4">
             <img class=" pixel " src=" assets/images/KeithPixel.jpeg " alt="Keith and his daughter Pixel ">
         </div>
         <div class="col-sm-8">
             <h3>Biography</h3>
             <img class="bullet " src="assets/images/balloon.png ">
-            <p>Keith Kimball was born in 1970 to two professional educators in rural, western Pennsylvania. His mother a, now retired, public-school, special education teacher began his love for learning and education as a part of her Head Start class at
-                the age of 3.</p>
+            <p>Keith Kimball was born in 1970 to two professional educators in rural, western Pennsylvania. His mother a, now retired, public-school, special education teacher began his love for learning and education as a part of her Head Start class at the age of 3.</p>
             <img class="bullet " src="assets/images/balloon.png ">
-            <p>He spent his elementary years in a suburb of Philadelphia then moved to Herndon, Virginia (a suburb of Washington D.C.) at the age of 15. From there he moved to Massachusetts before finally settling in New London in his senior year of high
-                school where he attended New London High (Go Whalers)!</p>
+            <p>He spent his elementary years in a suburb of Philadelphia then moved to Herndon, Virginia (a suburb of Washington D.C.) at the age of 15. From there he moved to Massachusetts before finally settling in New London in his senior year of high school where he attended New London High (Go Whalers)!</p>
             <img class="bullet " src="assets/images/balloon.png ">
             <p>He has been an active New London resident ever since. His wife, Jeanine, a Cuban-American born and raised in Miami, came to live in New London in 2000. She has grown to love New London and its community and never wants to leave.</p>
             <img class="bullet " src="assets/images/balloon.png ">
@@ -19,7 +31,25 @@
             <p>Keith (and the whole family) are movie geeks. He enjoys spending time on his hobbies; baking, cooking, and community building as well as spending time with his family, friends and neighbors.</p>
         </div>
     </div>
-    <div class="experience row">
+    <div class="bio row"  *ngIf="value === 'Spanish'">
+        <div class="col-sm-4">
+            <img class=" pixel " src=" assets/images/KeithPixel.jpeg " alt="Keith and his daughter Pixel ">
+        </div>
+        <div class="col-sm-8">
+            <h3>Biografía</h3>
+            <img class="bullet " src="assets/images/balloon.png ">
+            <p>Keith Kimball nació en 1970 de dos educadores profesionales en una zona rural del oeste de Pensilvania. Su madre, ahora jubilada, maestra de educación especial de una escuela pública, comenzó su amor por el aprendizaje y la educación como parte de su clase de Head Start en la edad de 3.</p>
+            <img class="bullet " src="assets/images/balloon.png ">
+            <p>Pasó sus años de primaria en un suburbio de Filadelfia y luego se mudó a Herndon, Virginia (un suburbio de Washington DC) a la edad de 15 años. De allí se mudó a Massachusetts antes de finalmente establecerse en New London en su último año de escuela secundaria, donde se asistió a New London High (Go Whalers)!</p>
+            <img class="bullet " src="assets/images/balloon.png ">
+            <p>Ha sido un residente activo de New London desde entonces. Su esposa, Jeanine, una cubanoamericana nacida y criada en Miami, vino a vivir a New London en el 2000. Ha llegado a amar New London y su comunidad y nunca quiere irse.</p>
+            <img class="bullet " src="assets/images/balloon.png ">
+            <p>Keith se convirtió en padre en 2013 cuando nació su única hija, Pixel. En 2015 dejó su trabajo como contable de contabilidad general en Dealertrack Technologies para concentrarse en criar Pixel y apoyar su viaje educativo.</p>
+            <img class="bullet " src="assets/images/balloon.png ">
+            <p>Keith (y toda la familia) son fanáticos del cine. Le gusta dedicar tiempo a sus pasatiempos; hornear, cocinar y construir una comunidad, así como pasar tiempo con su familia, amigos y vecinos.</p>
+        </div>
+    </div>
+    <div class="experience row" *ngIf="value !== 'Spanish'">
         <div class="col-sm-8">
             <h3>Experience and Accomplishments</h3>
             <img class="bullet " src="assets/images/heart.png ">
@@ -35,15 +65,30 @@
             <img class="keith " src="assets/images/Keith-Portrait.jpeg " alt="Keith portrait ">
         </div>
     </div>
-    <div class="commit row">
+    <div class="experience row" *ngIf="value === 'Spanish'">
+        <div class="col-sm-8">
+            <h3>EXPERIENCIAS Y LOGROS</h3>
+            <img class="bullet" src="assets/images/heart.png">
+            <p>Treinta años de vivir en New London y ser un orgulloso padre de un estudiante de la escuela Jennings.</p>
+            <img class="bullet" src="assets/images/heart.png">
+            <p>Mas de treinta años de experiencia como Contador de Personal para grandes corporaciones y organizaciones sin fines de lucro.</p>
+            <img class="bullet" src="assets/images/heart.png">
+            <p> Servicio como Tesorera de RE-PUBLIC ED, una organización en defensa de la educación pública sin fines de lucro y actualmente tesorero de la Iglesia Grace and Peace.</p>
+            <img class="bullet" src="assets/images/heart.png">
+            <p>Como Tesorero de La Friendship School de FFO, trabajé con otros miembros de la junta para llevar a cabo varias exitosas recaudaciones de fondos.</p>
+        </div>
+        <div class="col-sm-4">
+            <img class="keith " src="assets/images/Keith-Portrait.jpeg " alt="Keith portrait ">
+        </div>
+    </div>
+    <div class="commit row" *ngIf="value !== 'Spanish'">
         <div class="col-sm-4">
             <img class="chairs " src="assets/images/schoolchairs.jpeg " alt="Classroom setting ">
         </div>
         <div class="col-sm-8">
             <h3>I AM COMMITTED TO...</h3>
             <img class="bullet " src="assets/images/heartballoon.png ">
-            <p>Ensuring that our all-magnet district effectively acquires and distributes funds and resources for all New London students.
-            </p>
+            <p>Ensuring that our all-magnet district effectively acquires and distributes funds and resources for all New London students.</p>
             <img class="bullet " src="assets/images/heartballoon.png ">
             <p>Building our already impressive ESL program to encourage the success of our ESL community members.</p>
             <img class="bullet " src="assets/images/heartballoon.png ">
@@ -52,6 +97,24 @@
             <p>Seeking out input of New London parents and students to ensure their voices are heard and represented.</p>
             <img class="bullet " src="assets/images/heartballoon.png ">
             <p>Expanding on NLPS curriculums to include education on civics and government that teaches our rights and responsibilities as citizens, and how our government works.</p>
+        </div>
+    </div>
+    <div class="commit row" *ngIf="value === 'Spanish'">
+        <div class="col-sm-4">
+            <img class="chairs " src="assets/images/schoolchairs.jpeg " alt="Classroom setting ">
+        </div>
+        <div class="col-sm-8">
+            <h3>YO ME COMPROMETO A...</h3>
+            <img class="bullet " src="assets/images/heartballoon.png ">
+            <p>Asegurarn que todo nuestro Distrito Magnet adquiera y distribuya fondos y recursos para todos los estudiantes de New London.</p>
+            <img class="bullet " src="assets/images/heartballoon.png ">
+            <p>Seguir construyendo nuestro ya impresionante programa de ESL para fomentar el éxito de los miembros de nuestra comunidad de ESL.</p>
+            <img class="bullet " src="assets/images/heartballoon.png ">
+            <p>Mejorar de oportunidades y la calidad en la comunicación entre la administración y facultad de las NLPS y los padres y estudiantes de New London.</p>
+            <img class="bullet " src="assets/images/heartballoon.png ">
+            <p>Buscar el aporte de los padres y estudiantes de New London para que sus voces sean escuchadas y representadas.</p>
+            <img class="bullet " src="assets/images/heartballoon.png ">
+            <p>Ampliación de los planes de estudio que incluyan Civismo y Gobierno, que nos enseñen nuestros derechos y responsabilidades como ciudadanos y como nuestros gobiernos funcionan.</p>
         </div>
     </div>
 </div>

@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CampaignComponent implements OnInit {
 
+  value!: string;
+
   constructor() { }
 
   ngOnInit(): void {
