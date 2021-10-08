@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component'
 import { NewsComponent } from './news/news.component'
 import { NewsPr927Component } from './news/news-pr927.component'
 import { NewsCovidComponent } from './news/news-covid.component'
+import { NewsMessageComponent } from './news/news-message.component'
 
 @NgModule({
 	declarations: [
@@ -20,6 +21,7 @@ import { NewsCovidComponent } from './news/news-covid.component'
 		NewsComponent,
 		NewsPr927Component,
 		NewsCovidComponent,
+		NewsMessageComponent,
 	],
 	imports: [
 		BrowserModule,
@@ -29,6 +31,7 @@ import { NewsCovidComponent } from './news/news-covid.component'
 			{ path: 'news', component: NewsComponent },
 			{ path: 'news-pr927', component: NewsPr927Component },
 			{ path: 'news-covid', component: NewsCovidComponent },
+			{ path: 'news-message', component: NewsMessageComponent },
 			{ path: '', redirectTo: 'welcome', pathMatch: 'full' },
 			{ path: '**', redirectTo: 'welcome', pathMatch: 'full' },
 		]),

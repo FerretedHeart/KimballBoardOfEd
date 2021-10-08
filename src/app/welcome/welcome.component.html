@@ -1,40 +1,51 @@
-<h2>Vote For Me on November 2nd!</h2>
+<div>
+	<div class="alert alert-success" role="alert">
+		<a class="alert-link" [routerLink]="['/news-message']">
+			<h3>Mensaje Para Mis Vecinos Latinos</h3></a
+		>
+	</div>
+</div>
 <div class="welcome container-fluid">
-    <div class="row">
-        <div class="col-sm">
-        </div>
-        <div class="col-sm">
-            <a [routerLink]="['/campaign']"><img class="keithlogo" src=" ./assets/images/keithmain.png "></a>
-        </div>
-        <div class="col-sm">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6VjM1NZB2N9FirBF0EM5y9uuy9Em1b3jN84QlHeXu6QvFtQ/viewform?vc=0&c=0&w=1&flr=0 " target="_blank">
-                <img class="vote " src="./assets/images/votersurvey.png ">
-            </a>
-            <h3>Survey</h3>
-        </div>
-        <div class="col-sm email ">
-            <fa-icon [icon]="faEnvelopeOpen "></fa-icon><br>
-            <a href="mailto:w.keith.kimball@gmail.com " target="_blank">Email Keith</a>
-        </div>
-        <div class="col-sm">
-            <a href="https://secure.anedot.com/nlgreens/donate " target="_blank">
-                <img class="donate " src="./assets/images/donate.png ">
-            </a>
-            <h3>Donate</h3>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm">
-        </div>
-        <div class="col-sm">
-            <a href="https://www.facebook.com/WebWeasel " target="_blank"><img class="facebook " src="./assets/images/facebook.png "></a>
-            <h3>Visit me on Facebook</h3>
-        </div>
-        <div class="col-sm">
-        </div>
-    </div>
+	<div class="row">
+		<div class="col-sm"></div>
+		<div class="col-sm">
+			<a [routerLink]="['/campaign']"
+				><img class="keithlogo" src=" ./assets/images/keithmain.png "
+			/></a>
+		</div>
+		<div class="col-sm"></div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<a
+				href="https://docs.google.com/forms/d/e/1FAIpQLSc6VjM1NZB2N9FirBF0EM5y9uuy9Em1b3jN84QlHeXu6QvFtQ/viewform?vc=0&c=0&w=1&flr=0 "
+				target="_blank"
+			>
+				<img class="vote" src="./assets/images/votersurvey.png " />
+			</a>
+			<h3>Survey</h3>
+		</div>
+		<div class="col-sm email">
+			<fa-icon [icon]="faEnvelopeOpen"></fa-icon><br />
+			<a href="mailto:w.keith.kimball@gmail.com " target="_blank"
+				>Email Keith</a
+			>
+		</div>
+		<div class="col-sm">
+			<a href="https://secure.anedot.com/nlgreens/donate " target="_blank">
+				<img class="donate" src="./assets/images/donate.png " />
+			</a>
+			<h3>Donate</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm"></div>
+		<div class="col-sm">
+			<a href="https://www.facebook.com/WebWeasel " target="_blank"
+				><img class="facebook" src="./assets/images/facebook.png "
+			/></a>
+			<h3>Visit me on Facebook</h3>
+		</div>
+		<div class="col-sm"></div>
+	</div>
 </div>

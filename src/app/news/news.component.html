@@ -1,7 +1,12 @@
 <div class="container">
-	<div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+	<div class="alert alert-success text-center" role="alert">
+		<a class="alert-link" [routerLink]="['/news-message']">
+			<h3>Mensaje Para Mis Vecinos Latinos</h3></a
+		>
+	</div>
+	<div class="row" style="margin-top: 20px; margin-bottom: 20px">
 		<div class="col-sm-6 col-md-6">
-			<div class="card border-success" >
+			<div class="card border-success">
 				<img src="assets/images/election-english.png" class="card-img-top" />
 			</div>
 		</div>
@@ -11,7 +16,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row" style="margin-bottom: 20px">
 		<div class="col-sm-6">
 			<div class="card border-success">
 				<h5 class="card-header text-center">9/27 Press Release</h5>
@@ -58,7 +63,7 @@
 	<div class="row">
 		<div class="col-sm-6">
 			<div class="card border-success text-center">
-				<div>
+				<div class="embed-responsive embed-responsive-1by1">
 					<iframe
 						class="video"
 						src="https://www.youtube.com/embed/xD30f8R4Szw"
@@ -70,8 +75,8 @@
 					</iframe>
 				</div>
 				<div class="card-body">
-					<h4 class="card-title">Thinking Green, hosted by Ronna Stuller</h4>
-					<h5 class="card-subtitle mb-2 text-muted">3 Candidates</h5>
+					<h4 class="card-title">3 Candidates</h4>
+					<h5 class="card-subtitle mb-2 text-muted">Thinking Green, hosted by Ronna Stuller</h5>
 					<h6 class="card-subtitle">
 						<em
 							><a href="https://www.facebook.com/profile.php?id=100010602644739"
@@ -87,9 +92,27 @@
 				</div>
 			</div>
 		</div>
+		<div class="col-sm-6">
+			<div class="card border-success text-center">
+				<div class="embed-responsive embed-responsive-1by1">
+					<iframe
+						class="video"
+						src="https://www.youtube.com/embed/M92zkt-te7c"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+				</div>
+				<div class="card-body">
+					<h4 class="card-title">Keith Kimball for New London Board of Education</h4>
+					<h5 class="card-subtitle mb-2 text-muted">Thinking Green, hosted by Ronna Stuller</h5>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
 
-<div>
-	<router-outlet></router-outlet>
+	<div>
+		<router-outlet></router-outlet>
+	</div>
 </div>
